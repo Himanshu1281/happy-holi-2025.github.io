@@ -21,7 +21,7 @@ This project is a vibrant Holi celebration webpage designed for both desktop and
 ## Installation & Usage
 1. Clone this repository or download the files.
    ```sh
-   git clone <happy-holi-2025>
+   git clone https://github.com/Himanshu1281/happy-holi-2025.git
    ```
 2. Open `index.html` in a web browser.
 3. Ensure the `images` folder is in the same directory as `index.html`.
