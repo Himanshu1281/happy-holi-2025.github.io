@@ -3,60 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HAPPY HOLI</title>
+    <title>Click Me Button</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section id="scene">
+    <section id="scene1">
       <img alt="background" src="resource/splash.png" id="splash" />
-      <img alt="happy holi" src="resource/text.png" id="text" />
-      <img alt="baloon1" src="resource/baloon1.png" id="baloon1" />
-      <img alt="baloon2" src="resource/baloon2.png" id="baloon2" />
-      <img alt="baloon3" src="resource/baloon3.png" id="baloon3" />
-      <img alt="decoration1" src="resource/decoration1.png" id="decoration1" />
-      <img alt="decoration2" src="resource/decoration2.png" id="decoration2" />
-      <img alt="colour1" src="resource/color1.png" id="color1" />
-      <img alt="colour2 " src="resource/color2.png" id="color2" />
-      <img alt="Watergun1" src="resource/watergun1.png" id="Watergun1" />
-      <img alt="Watergun2" src="resource/watergun2.png" id="Watergun2" />
+
+      <!-- Clickable button -->
+      <a href="index.html" class="clickme-container">
+        <img src="resource/clickme.png" alt="Click Me" class="clickme-img" />
+        <span class="clickme-text">Click Me</span>
+      </a>
     </section>
-
-    <div class="sec">
-      <h2>Wishing You a Joyous and Prosperous Holi 2025!</h2>
-      <p>
-        May this festival of colors bring happiness, harmony, and success into
-        your life. May it strengthen the bonds of friendship and togetherness
-        while filling your days with positivity and joy. <br /><br />
-        Wishing you and your loved ones a bright and colorful Holi!
-      </p>
-    </div>
-
-    <script>
-      let splash = document.getElementById("splash");
-      let text = document.getElementById("text");
-      let baloon1 = document.getElementById("baloon1");
-      let baloon2 = document.getElementById("baloon2");
-      let baloon3 = document.getElementById("baloon3");
-      let decoration1 = document.getElementById("decoration1");
-      let decoration2 = document.getElementById("decoration2");
-      let color1 = document.getElementById("color1");
-      let color2 = document.getElementById("color2");
-      let Watergun1 = document.getElementById("Watergun1");
-      let watergun2 = document.getElementById("Watergun2");
-
-      window.addEventListener("scroll", function () {
-        let value = window.scrollY;
-        splash.style.top = value * 0.75 + "px";
-        text.style.top = value * 0.25 + "px";
-        baloon1.style.top = value * -3.25 + "px";
-        baloon2.style.top = value * -0.5 + "px";
-        baloon3.style.top = value * -2.0 + "px";
-        decoration1.style.top = value * 0.5 + "px";
-        color1.style.top = value * -0.25 + "px";
-        color2.style.top = value * -0.75 + "px";
-        Watergun1.style.left = value * -0.75 + "px";
-        watergun2.style.left = value * 0.75 + "px";
-      });
-    </script>
   </body>
 </html>
