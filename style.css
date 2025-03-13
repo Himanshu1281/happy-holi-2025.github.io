@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,90&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #361040 url(resource/bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  color: #fff;
+}
+
+.sec p {
+  color: #fff;
+}
+
+#scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#scene img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#scene1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#scene1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Styling for centering the Click Me button */
+.clickme-container {
+  position: absolute; /* Crucial for centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+  text-align: center;
+  text-decoration: none; /* Remove link styling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Ensure it appears above the background */
+}
+
+/* Click Me Image */
+.clickme-img {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  z-index: 11; /* Ensure it is visible */
+}
+
+/* Overlay text on the image */
+.clickme-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfectly centered text */
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px black;
+  z-index: 12; /* Ensure text is visible */
+}
+
+@media (max-width: 1024px) {
+  #header {
+    padding: 15px 5%;
+  }
+
+  #scene {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 500px;
+  }
+
+  #scene img {
+    width: 100%;
+  }
+  .sec {
+    padding: 60px 5%;
+  }
+
+  .sec h2 {
+    font-size: 2.5em;
+  }
+
+  #scene {
+    height: auto;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  #header ul {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .sec {
+    padding: 50px 5%;
+  }
+
+  .sec h2 {
+    font-size: 2.2em;
+  }
+
+  .clickme-img {
+    width: 100px;
+  }
+
+  #scene {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+  }
+
+  #scene img {
+    width: 100%;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .sec {
+    padding: 40px 5%;
+  }
+
+  .sec h2 {
+    font-size: 1.8em;
+  }
+
+  .clickme-img {
+    width: 100px;
+  }
+
+  #scene img {
+    width: 100%;
+  }
+}
